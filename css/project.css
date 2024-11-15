@@ -154,4 +154,8 @@
   .text {
     font-style: 16px;
   }
+
+    .textArea {
+        gap: 10px;
+    }
 }
