@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    background-image: url("https://opolattr.github.io/Omer-Polat-Portfolio.github.io/images/relaxbackground1.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* {} # */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 1536px;
+  margin: auto;
+  padding-left: 150px;
+  padding-right: 150px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Lucida Handwriting", "Cursive";
+  position: sticky;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 15px;
+}
+
+.links a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links a:hover {
+  opacity: 0.6;
+}
+
+.menuButton,
+.mobileLinks {
+  display: none;
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(182, 174, 174);
+}
+
+@media (max-width: 1536) {
+  .container {
+    width: 1366px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 1024px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 640px;
+  }
+  .links {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobileLinks {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 50%;
+    height: calc(100vh - 50px);
+    background-color: #000000;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: none;
+  }
+
+  .mobileLinks a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 475px;
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    width: 380px;
+  }
+}

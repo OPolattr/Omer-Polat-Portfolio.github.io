@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ömer Polat - Portfolyo</title>
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <!-- Main Div -->
+    <div class="container">
+      <!-- Navbar -->
+      <div class="header">
+        <a href="index.html" class="logo">Polat</a>
+        <div class="links">
+          <a href="https://opolattr.github.io/Omer-Polat-Portfolio.github.io/index">Homepage</a>
+          <a href="https://opolattr.github.io/Omer-Polat-Portfolio.github.io/about">About</a>
+          <a href="https://opolattr.github.io/Omer-Polat-Portfolio.github.io/project">Works</a>
+        </div>
+        <img
+          src="images/menu.png"
+          alt="Menu"
+          class="menuButton"
+          width="30"
+          height="30"
+          onclick="toggleMenu()"
+        />
+        <div class="mobileLinks">
+            <a href="https://opolattr.github.io/Omer-Polat-Portfolio.github.io/index">Homepage</a>
+            <a href="https://opolattr.github.io/Omer-Polat-Portfolio.github.io/about">About</a>
+            <a href="https://opolattr.github.io/Omer-Polat-Portfolio.github.io/project">Works</a>
+        </div>
+      </div>
+
+      <!-- Welcome Area And Time or Date Area -->
+      <div class="areas">
+        <div class="textArea">
+          <h1 class="title">Hi, Welcome</h1>
+          <p class="text">
+            You are currently browsing Ömer Polat's Portfolio Website. I hope
+            you like it.
+          </p>
+        </div>
+        <div class="timeArea">
+          <div id="clockShow" class="clock" onload="showTime()"></div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+
+      <div class="contactContainer">
+        <div class="formContainer">
+          <h4 class="contactText">Contact Me</h4>
+          <form action="" class="form">
+            <input id="name" name="name" type="text" placeholder="Name and Surname" />
+            <input id="email" name="email" type="text" placeholder="Email Address" />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <button onclick="contactControl()">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="logo" style="font-size: 18px">Polat</div>
+        <div class="text">
+          Ömer Polat Tarafından yapılmıştır.
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+.areas {
+    padding: 100px;
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 96px;
+}
+
+.text {
+  font-style: 25px;
+}
+
+.timeArea {
+  position: relative;
+}
+
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 7px;
+}
+
+.contactContainer {
+    margin-top: 150px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  flex-direction: column;
+}
+
+.contactText{
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+.formContainer {
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form input,
+.form textarea {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(37, 35, 35);
+  color: white;
+}
+
+.form button {
+  padding: 20px;
+  background-color: rgb(23, 20, 20);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .areas {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 64px;
+  }
+  .contactContainer {
+    flex-direction: column;
+  }
+
+  .formContainer {
+    width: 65%;
+  }
+}
