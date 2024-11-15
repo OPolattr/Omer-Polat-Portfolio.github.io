@@ -139,4 +139,12 @@
   .modal-content {
     width: 100%;
   }
+
+  .title {
+    font-size: 48px;
+  }
+  
+  .text {
+    font-style: 16px;
+  }
 }
