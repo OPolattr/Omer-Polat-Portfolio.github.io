@@ -97,6 +97,16 @@ a {
 
 @media (max-width: 768px) {
 
+  body {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    background-image: url("../images/relaxbackground1ForPhone.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+}
+
   .container {
     width: 640px;
   }
